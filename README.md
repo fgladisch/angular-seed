@@ -24,24 +24,28 @@ My personal "Angular seed" (a template for angular projects).
 │   ├── icon.png
 │   └── logo.png
 ├── js
-│   ├── app.js
+│   ├── controllers
+│   │   └── example.js
+│   ├── services
+│   │   └── example.js
+│   └── app.js
+├── templates
+│   └── example.html
+├── test
 │   ├── controllers
 │   │   └── example.js
 │   └── services
 │       └── example.js
-├── test
-│   ├── controllers
-│   │   └── example.js
-│   └── services
-│       └── example.js
-├── templates
-│   └── example.html
+├── .brackets.json
+├── .gitignore
+├── .jscsrc
 ├── bower.json
 ├── gulpfile.js
 ├── index.html
 ├── karma.conf.js
 ├── package.json
 └── README.md
+
 ```
 
 ## Cool! How do I use this?
