@@ -10,6 +10,40 @@ My personal "Angular seed" (a template for angular projects).
 * Roboto font and the CSS to use it
 * Example stuff
 
+```sh
+.
+├── css
+│   ├── app.css
+│   └── font.css
+├── font
+│   ├── Roboto-Bold.woff
+│   ├── Roboto-Light.woff
+│   ├── Roboto-Regular.woff
+│   └── Roboto-Thin.woff
+├── img
+│   ├── icon.png
+│   └── logo.png
+├── js
+│   ├── app.js
+│   ├── controllers
+│   │   └── example.js
+│   └── services
+│       └── example.js
+├── test
+│   ├── controllers
+│   │   └── example.js
+│   └── services
+│       └── example.js
+├── templates
+│   └── example.html
+├── bower.json
+├── gulpfile.js
+├── index.html
+├── karma.conf.js
+├── package.json
+└── README.md
+```
+
 ## Cool! How do I use this?
 
 ### Install dependencies:
