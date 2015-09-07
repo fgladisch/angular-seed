@@ -7,7 +7,7 @@ My personal "Angular seed" (a template for angular projects).
 * Angular (with routing)
 * Testing with Karma, Jasmine, PhantomJS and Istanbul (code coverage report)
 * Brackets configuration files for JSHint und JSCS linting
-* Gulpfile which runs test and outputs minified css and javascript (see below)
+* Gulpfile which runs tests and outputs minified css and javascript (see below)
 * Roboto font and the CSS to use it
 * Example stuff
 
