@@ -4,11 +4,12 @@ My personal "Angular seed" (a template for angular projects).
 
 ## What is included?
 
-* Angular (with routing)
-* Testing with Karma, Jasmine, PhantomJS and Istanbul (code coverage report)
-* Brackets configuration files for JSHint und JSCS linting
-* Gulpfile which runs tests and outputs minified css and javascript (see below)
-* Roboto font and the CSS to use it
+* [Angular](https://angularjs.org/) (with routing)
+* Testing with [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io/) in [PhantomJS](http://phantomjs.org/)
+* Code coverage report with [Istanbul](https://gotwarlost.github.io/istanbul/)
+* [Brackets](http://brackets.io/) configuration files for [JSHint](http://jshint.com/) und [JSCS](http://jscs.info/) linting
+* [Gulpfile](http://gulpjs.com/) which runs tests and outputs minified JavaScript and CSS (see below)
+* [Roboto font](https://www.google.com/fonts/specimen/Roboto) and the CSS to use it
 * Example stuff
 
 ```sh
