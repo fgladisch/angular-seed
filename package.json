@@ -1,5 +1,9 @@
 {
   "name": "angular-template",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fgladisch/angular-template.git"
+  },
   "devDependencies": {
     "del": "*",
     "gulp": "*",
