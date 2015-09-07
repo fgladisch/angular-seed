@@ -1,0 +1,14 @@
+{
+  "name": "angular-template",
+  "version": "1.0.0",
+  "authors": [
+    "Felix Gladisch <felix@felixgladisch.de>"
+  ],
+  "description": "Template for angular projects featuring gulp and karma.",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-mocks": "^1.4.4",
+    "angular-route": "^1.4.4"
+  }
+}
