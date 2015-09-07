@@ -7,6 +7,7 @@ My personal "Angular seed" (a template for angular projects).
 * Angular (with routing)
 * Testing with Karma, Jasmine, PhantomJS and Istanbul (code coverage report)
 * Brackets configuration files for JSHint und JSCS linting
+* Gulpfile which runs test and outputs minified css and javascript (see below)
 * Roboto font and the CSS to use it
 * Example stuff
 
@@ -45,7 +46,6 @@ My personal "Angular seed" (a template for angular projects).
 ├── karma.conf.js
 ├── package.json
 └── README.md
-
 ```
 
 ## Cool! How do I use this?
@@ -59,6 +59,29 @@ My personal "Angular seed" (a template for angular projects).
 ### Build:
 ```sh
   $ gulp
+```
+
+**Result:**
+
+```sh
+build/
+├── bower_components
+│   └── *
+├── css
+│   └── app.min.css
+├── font
+│   ├── Roboto-Bold.woff
+│   ├── Roboto-Light.woff
+│   ├── Roboto-Regular.woff
+│   └── Roboto-Thin.woff
+├── img
+│   ├── icon.png
+│   └── logo.png
+├── js
+│   └── app.min.js
+├── templates
+│   └── example.html
+└── index.html
 ```
 
 ### Test:

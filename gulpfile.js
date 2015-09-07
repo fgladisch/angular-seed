@@ -16,7 +16,7 @@ gulp.task('clean', function(done) {
   return del('build', done);
 });
 
-gulp.task('test', ['default'], function(done) {
+gulp.task('test', function(done) {
   new KarmaServer({
     configFile: __dirname + '/karma.conf.js'
   }, done).start();
