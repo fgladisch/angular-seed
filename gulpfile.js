@@ -1,4 +1,4 @@
-/* global require, __dirname */
+/* global require, __dirname, console */
 
 var del = require('del');
 var gulp = require('gulp');
@@ -26,7 +26,7 @@ gulp.task('scripts', ['clean'], function() {
   return gulp.src('js/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(concat('app.min.js'))
-    .pipe(uglify())
+    .pipe(uglify()).on('error', handleError)
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 });
@@ -60,3 +60,8 @@ gulp.task('watch', ['default'], function() {
     './index.html'
   ], ['default']);
 });
+
+function handleError(error) {
+  console.log(error.toString());
+  this.emit('end');
+}
