@@ -1,4 +1,6 @@
-/* global require, __dirname, console */
+/* global require, __dirname */
+
+var APP_NAME = 'app';
 
 var del = require('del');
 var gulp = require('gulp');
@@ -11,6 +13,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var KarmaServer = require('karma').Server;
 
 gulp.task('default', ['copy', 'scripts', 'css']);
+gulp.task('debug', ['copy', 'scripts_debug', 'css']);
 
 gulp.task('clean', function(done) {
   return del('build', done);
@@ -24,16 +27,22 @@ gulp.task('test', function(done) {
 
 gulp.task('scripts', ['clean'], function() {
   return gulp.src('js/**/*.js')
+    .pipe(concat(APP_NAME + '.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('build/js'));
+});
+
+gulp.task('scripts_debug', ['clean'], function() {
+  return gulp.src('js/**/*.js')
     .pipe(sourcemaps.init())
-    .pipe(concat('app.min.js'))
-    .pipe(uglify()).on('error', handleError)
+    .pipe(concat(APP_NAME + '.min.js'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('css', ['clean'], function() {
-  return gulp.src('css/app.css')
-    .pipe(concatCss('app.min.css'))
+  return gulp.src('css/wallboard.css')
+    .pipe(concatCss(APP_NAME + '.min.css'))
     .pipe(minifyCss())
     .pipe(gulp.dest('build/css'));
 });
@@ -49,7 +58,7 @@ gulp.task('copy', ['clean'], function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('watch', ['default'], function() {
+gulp.task('watch', ['debug'], function() {
   gulp.watch([
     './bower_components/**',
     './templates/**',
@@ -58,10 +67,5 @@ gulp.task('watch', ['default'], function() {
     './font/**',
     './img/**',
     './index.html'
-  ], ['default']);
+  ], ['debug']);
 });
-
-function handleError(error) {
-  console.log(error.toString());
-  this.emit('end');
-}

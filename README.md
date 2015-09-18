@@ -49,7 +49,7 @@ My personal "Angular seed" (a template for angular projects).
 └── README.md
 ```
 
-## Cool! How do I use this?
+## How do I use this?
 
 ### Install dependencies:
 ```sh
@@ -83,6 +83,16 @@ build/
 ├── templates
 │   └── example.html
 └── index.html
+```
+
+### Build, but don't minify JavaScript (for better debugging):
+```sh
+  $ gulp debug
+```
+
+### Build on changes (... and don't minify JavaScript):
+```sh
+  $ gulp watch
 ```
 
 ### Test:
