@@ -13,16 +13,21 @@ var sourcemaps = require('gulp-sourcemaps');
 var KarmaServer = require('karma').Server;
 
 gulp.task('default', ['copy', 'scripts', 'css']);
+
 gulp.task('debug', ['copy', 'scripts_debug', 'css']);
+
+gulp.task('test', ['clean_test'], function(done) {
+  new KarmaServer({
+    configFile: __dirname + '/karma.conf.js'
+  }, done).start();
+});
 
 gulp.task('clean', function(done) {
   return del('build', done);
 });
 
-gulp.task('test', function(done) {
-  new KarmaServer({
-    configFile: __dirname + '/karma.conf.js'
-  }, done).start();
+gulp.task('clean_test', function(done) {
+  return del('coverage', done);
 });
 
 gulp.task('scripts', ['clean'], function() {
