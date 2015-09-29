@@ -41,7 +41,7 @@ gulp.task('scripts_debug', ['clean'], function() {
 });
 
 gulp.task('css', ['clean'], function() {
-  return gulp.src('css/wallboard.css')
+  return gulp.src('css/' + APP_NAME + '.css')
     .pipe(concatCss(APP_NAME + '.min.css'))
     .pipe(minifyCss())
     .pipe(gulp.dest('build/css'));
