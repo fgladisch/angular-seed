@@ -7,10 +7,20 @@ My personal "Angular seed" (a template for angular projects).
 * [Angular](https://angularjs.org/) (with routing)
 * Testing with [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io/) in [PhantomJS](http://phantomjs.org/)
 * Code coverage report with [Istanbul](https://gotwarlost.github.io/istanbul/)
-* [Brackets](http://brackets.io/) configuration files for [JSHint](http://jshint.com/) und [JSCS](http://jscs.info/) linting
+* Configuration files for [tern](http://ternjs.net/) und [JSCS](http://jscs.info/)
 * [Gulpfile](http://gulpjs.com/) which runs tests and outputs minified JavaScript and CSS (see below)
 * [Roboto font](https://www.google.com/fonts/specimen/Roboto) and the CSS to use it
 * Example stuff
+
+## Recommended Atom Plugins
+
+* [atom-ternjs](https://atom.io/packages/atom-ternjs)
+* [linter](https://atom.io/packages/linter)
+* [linter-jscs](https://atom.io/packages/linter-jscs)
+* [linter-jshint](https://atom.io/packages/linter-jshint)
+* [minimap](https://atom.io/packages/minimap)
+
+## Project structure
 
 ```sh
 .
