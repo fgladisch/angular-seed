@@ -48,9 +48,9 @@ My personal "Angular seed" (a template for angular projects).
 │   │   └── example.js
 │   └── services
 │       └── example.js
-├── .brackets.json
 ├── .gitignore
 ├── .jscsrc
+├── .tern-project.json
 ├── bower.json
 ├── gulpfile.js
 ├── index.html
