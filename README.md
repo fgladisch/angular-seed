@@ -25,7 +25,6 @@ My personal "Angular seed" (a template for angular projects).
 ```sh
 .
 ├── css
-│   ├── app.css
 │   └── font.css
 ├── font
 │   ├── Roboto-Bold.woff

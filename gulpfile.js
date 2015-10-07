@@ -46,7 +46,7 @@ gulp.task('scripts_debug', ['clean'], function() {
 });
 
 gulp.task('css', ['clean'], function() {
-  return gulp.src('css/' + APP_NAME + '.css')
+  return gulp.src('css/**/*.css')
     .pipe(concatCss(APP_NAME + '.min.css'))
     .pipe(minifyCss())
     .pipe(gulp.dest('build/css'));
