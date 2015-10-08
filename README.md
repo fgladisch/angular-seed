@@ -18,7 +18,6 @@ My personal "Angular seed" (a template for angular projects).
 * [linter](https://atom.io/packages/linter)
 * [linter-jscs](https://atom.io/packages/linter-jscs)
 * [linter-jshint](https://atom.io/packages/linter-jshint)
-* [minimap](https://atom.io/packages/minimap)
 
 ## Project structure
 
