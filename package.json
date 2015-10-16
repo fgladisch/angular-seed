@@ -4,6 +4,10 @@
     "type": "git",
     "url": "git://github.com/fgladisch/angular-template.git"
   },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 140
+  },
   "devDependencies": {
     "del": "*",
     "gulp": "*",
