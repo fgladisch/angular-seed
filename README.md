@@ -23,35 +23,35 @@ My personal "Angular seed" (a template for angular projects).
 
 ```sh
 .
-├── css
-│   └── font.css
-├── font
-│   ├── Roboto-Bold.woff
-│   ├── Roboto-Light.woff
-│   ├── Roboto-Regular.woff
-│   └── Roboto-Thin.woff
-├── img
-│   ├── icon.png
-│   └── logo.png
-├── js
-│   ├── controllers
-│   │   └── example.js
-│   ├── services
-│   │   └── example.js
-│   └── app.js
-├── templates
-│   └── example.html
+├── app
+│   ├── images
+│   │   ├── icon.png
+│   │   └── logo.png
+│   ├── scripts
+│   │   ├── controllers
+│   │   │   └── example.js
+│   │   ├── services
+│   │   │   └── example.js
+│   │   └── app.js
+│   ├── styles
+│   │   ├── font
+│   │   │   ├── Roboto-Bold.woff
+│   │   │   ├── Roboto-Light.woff
+│   │   │   ├── Roboto-Regular.woff
+│   │   │   └── Roboto-Thin.woff
+│   │   └── font.css
+│   ├── templates
+│   │   └── example.html
+│   └── index.html
 ├── test
 │   ├── controllers
 │   │   └── example.js
 │   └── services
 │       └── example.js
 ├── .gitignore
-├── .jscsrc
-├── .tern-project.json
+├── .tern-project
 ├── bower.json
 ├── gulpfile.js
-├── index.html
 ├── karma.conf.js
 ├── package.json
 └── README.md
@@ -73,21 +73,20 @@ My personal "Angular seed" (a template for angular projects).
 **Result:**
 
 ```sh
-build/
+.
 ├── bower_components
-│   └── *
-├── css
-│   └── app.min.css
-├── font
-│   ├── Roboto-Bold.woff
-│   ├── Roboto-Light.woff
-│   ├── Roboto-Regular.woff
-│   └── Roboto-Thin.woff
-├── img
+├── images
 │   ├── icon.png
 │   └── logo.png
-├── js
+├── scripts
 │   └── app.min.js
+├── styles
+│   ├── font
+│   │   ├── Roboto-Bold.woff
+│   │   ├── Roboto-Light.woff
+│   │   ├── Roboto-Regular.woff
+│   │   └── Roboto-Thin.woff
+│   └── app.min.css
 ├── templates
 │   └── example.html
 └── index.html

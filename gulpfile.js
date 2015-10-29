@@ -1,5 +1,3 @@
-/* global require, __dirname */
-
 var APP_NAME = 'app';
 
 var del = require('del');
@@ -12,9 +10,9 @@ var sourcemaps = require('gulp-sourcemaps');
 
 var KarmaServer = require('karma').Server;
 
-gulp.task('default', ['copy', 'scripts', 'css']);
+gulp.task('default', ['copy_app', 'copy_bower', 'scripts', 'css']);
 
-gulp.task('debug', ['copy', 'scripts_debug', 'css']);
+gulp.task('debug', ['copy_app', 'copy_bower', 'scripts_debug', 'css']);
 
 gulp.task('test', ['clean_test'], function(done) {
   new KarmaServer({
@@ -31,46 +29,45 @@ gulp.task('clean_test', function(done) {
 });
 
 gulp.task('scripts', ['clean'], function() {
-  return gulp.src('js/**/*.js')
+  return gulp.src('./app/scripts/**/*.js')
     .pipe(concat(APP_NAME + '.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/scripts'));
 });
 
 gulp.task('scripts_debug', ['clean'], function() {
-  return gulp.src('js/**/*.js')
+  return gulp.src('./app/scripts/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(concat(APP_NAME + '.min.js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest('build/scripts'));
 });
 
 gulp.task('css', ['clean'], function() {
-  return gulp.src('css/**/*.css')
+  return gulp.src('./app/styles/**/*.css')
     .pipe(concatCss(APP_NAME + '.min.css'))
     .pipe(minifyCss())
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/styles'));
 });
 
-gulp.task('copy', ['clean'], function() {
+gulp.task('copy_bower', ['clean'], function() {
+  return gulp.src('./bower_components/**', {base: './'})
+    .pipe(gulp.dest('build'));
+});
+
+gulp.task('copy_app', ['clean'], function() {
   return gulp.src([
-    './bower_components/**',
-    './templates/*.html',
-    './font/*.woff',
-    './img/*.{png,jpg}',
-    './index.html'
-  ], {base: './'})
+    './app/templates/*.html',
+    './app/styles/font/*.woff',
+    './app/images/*.{png,jpg}',
+    './app/index.html'
+  ], {base: './app'})
     .pipe(gulp.dest('build'));
 });
 
 gulp.task('watch', ['debug'], function() {
   gulp.watch([
     './bower_components/**',
-    './templates/**',
-    './css/**',
-    './js/**',
-    './font/**',
-    './img/**',
-    './index.html'
+    './app/**',
   ], ['debug']);
 });

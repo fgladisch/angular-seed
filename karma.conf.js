@@ -18,8 +18,8 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'js/*.js',
-      'js/*/*.js',
+      'app/scripts/*.js',
+      'app/scripts/*/*.js',
       'test/**/*.js'
     ],
 
@@ -30,7 +30,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'js/**/*.js': ['coverage']
+      'app/scripts/**/*.js': ['coverage']
     },
 
     // test results reporter to use
