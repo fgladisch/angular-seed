@@ -3,6 +3,7 @@ angular.module('app', ['ngRoute'])
 .config(['$routeProvider',
 
   function($routeProvider) {
+
     $routeProvider
       .when('/example', {
         templateUrl: 'templates/example.html'
@@ -10,6 +11,7 @@ angular.module('app', ['ngRoute'])
       .otherwise({
         redirectTo: '/example'
       });
+
   }
 
 ]);

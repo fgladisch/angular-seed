@@ -1,12 +1,4 @@
-/* global module,
-          require,
-          describe,
-          beforeEach,
-          inject,
-          it,
-          expect */
-
-describe('Unit: UtilServive', function() {
+describe('Unit: Example servive', function() {
 
   beforeEach(module('app'));
 
@@ -21,4 +13,3 @@ describe('Unit: UtilServive', function() {
   });
 
 });
-

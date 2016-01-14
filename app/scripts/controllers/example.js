@@ -1,8 +1,10 @@
 angular.module('app')
-  .controller('exampleController', ['$scope', '$log', 'exampleService', function($scope, $log, exampleService) {
+  .controller('exampleController', ['$scope', '$log', 'exampleService',
+    function($scope, $log, exampleService) {
 
-    $scope.test = function() {
-      return exampleService.test();
-    };
+      $scope.test = function() {
+        exampleService.test();
+      };
 
-  }]);
+    }
+  ]);

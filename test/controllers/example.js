@@ -1,33 +1,24 @@
-/* global module,
-          require,
-          describe,
-          beforeEach,
-          inject,
-          it,
-          expect */
-
-var exampleServiceMock = {
-  test: function() {
-    return true;
-  }
-};
-
-describe('Unit: ExampleController', function() {
+describe('Unit: Example controller', function() {
 
   beforeEach(module('app'));
 
   var $scope;
 
+  var exampleService = jasmine.createSpyObj('example', [
+    'test',
+  ]);
+
   beforeEach(inject(function($controller, $rootScope) {
     $scope = $rootScope.$new();
     $controller('exampleController', {
       $scope: $scope,
-      exampleService: exampleServiceMock
+      exampleService: exampleService
     });
   }));
 
   it('should succeed', function() {
-    expect($scope.test()).toEqual(true);
+    $scope.test();
+    expect(exampleService.test).toHaveBeenCalled();
   });
 
 });
