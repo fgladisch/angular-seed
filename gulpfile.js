@@ -10,9 +10,9 @@ var sourcemaps = require('gulp-sourcemaps');
 
 var KarmaServer = require('karma').Server;
 
-gulp.task('default', ['copy_app', 'copy_bower', 'scripts', 'css']);
+gulp.task('default', ['copy_app', 'copy_bower', 'scripts', 'styles']);
 
-gulp.task('debug', ['copy_app', 'copy_bower', 'scripts_debug', 'css']);
+gulp.task('debug', ['copy_app', 'copy_bower', 'scripts_debug', 'styles']);
 
 gulp.task('test', ['clean_test'], function(done) {
   new KarmaServer({
@@ -43,7 +43,7 @@ gulp.task('scripts_debug', ['clean'], function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('css', ['clean'], function() {
+gulp.task('styles', ['clean'], function() {
   return gulp.src('app/styles/**/*.css')
     .pipe(concatCss(APP_NAME + '.min.css'))
     .pipe(minifyCss())
