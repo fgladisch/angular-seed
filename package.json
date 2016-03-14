@@ -13,7 +13,7 @@
     "gulp": "*",
     "gulp-concat": "*",
     "gulp-concat-css": "*",
-    "gulp-minify-css": "*",
+    "gulp-cssnano": "*",
     "gulp-sourcemaps": "*",
     "gulp-uglify": "*",
     "jasmine-core": "*",
@@ -21,6 +21,6 @@
     "karma-coverage": "*",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
-    "phantomjs": "*"
+    "phantomjs-prebuilt": "*"
   }
 }

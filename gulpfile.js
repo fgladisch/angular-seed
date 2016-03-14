@@ -4,7 +4,7 @@ var del = require('del');
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
-var minifyCss = require('gulp-minify-css');
+var minifyCss = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
