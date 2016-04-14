@@ -8,24 +8,22 @@ var minifyCss = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
-var KarmaServer = require('karma').Server;
+gulp.task('default', [
+  'copy_app',
+  'copy_bower',
+  'scripts',
+  'styles'
+]);
 
-gulp.task('default', ['copy_app', 'copy_bower', 'scripts', 'styles']);
-
-gulp.task('debug', ['copy_app', 'copy_bower', 'scripts_debug', 'styles']);
-
-gulp.task('test', ['clean_test'], function(done) {
-  new KarmaServer({
-    configFile: __dirname + '/karma.conf.js'
-  }, done).start();
-});
+gulp.task('debug', [
+  'copy_app',
+  'copy_bower',
+  'scripts_debug',
+  'styles'
+]);
 
 gulp.task('clean', function(done) {
   return del('build', done);
-});
-
-gulp.task('clean_test', function(done) {
-  return del('coverage', done);
 });
 
 gulp.task('scripts', ['clean'], function() {

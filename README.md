@@ -61,13 +61,13 @@ My personal "Angular seed" (a template for angular projects).
 
 ### Install dependencies:
 ```sh
-  $ npm install
-  $ bower install
+$ npm install
+$ bower install
 ```
 
 ### Build:
 ```sh
-  $ gulp
+$ gulp
 ```
 
 **Result:**
@@ -94,15 +94,15 @@ My personal "Angular seed" (a template for angular projects).
 
 ### Build, but don't minify JavaScript (for better debugging):
 ```sh
-  $ gulp debug
+$ gulp debug
 ```
 
 ### Build on changes (... and don't minify JavaScript):
 ```sh
-  $ gulp watch
+$ gulp watch
 ```
 
 ### Test:
 ```sh
-  $ gulp test
+$ karma start
 ```
