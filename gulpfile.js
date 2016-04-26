@@ -9,15 +9,13 @@ var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default', [
-  'copy_app',
-  'copy_bower',
+  'copy',
   'scripts',
   'styles'
 ]);
 
 gulp.task('debug', [
-  'copy_app',
-  'copy_bower',
+  'copy',
   'scripts_debug',
   'styles'
 ]);
@@ -48,15 +46,9 @@ gulp.task('styles', ['clean'], function() {
     .pipe(gulp.dest('build/styles'));
 });
 
-gulp.task('copy_bower', ['clean'], function() {
-  return gulp.src('bower_components/**/*', {
-      base: '.'
-    })
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task('copy_app', ['clean'], function() {
+gulp.task('copy', ['clean'], function() {
   return gulp.src([
+      'app/bower_components/**/*',
       'app/templates/*.html',
       'app/styles/font/*.woff',
       'app/images/*.{png,jpg}',
