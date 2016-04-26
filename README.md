@@ -48,6 +48,7 @@ My personal "Angular seed" (a template for angular projects).
 │   │   └── example.js
 │   └── services
 │       └── example.js
+├── .bowerrc
 ├── .gitignore
 ├── .tern-project
 ├── bower.json
