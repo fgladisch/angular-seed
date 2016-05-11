@@ -1,5 +1,7 @@
 describe('Unit: Example servive', function() {
 
+  'use strict';
+
   beforeEach(module('app'));
 
   var example;

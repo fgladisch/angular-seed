@@ -1,5 +1,7 @@
 describe('Unit: Example controller', function() {
 
+  'use strict';
+
   beforeEach(module('app'));
 
   var $scope;

@@ -4,10 +4,11 @@
     "browser"
   ],
   "loadEagerly": [
-    "app/scripts/**/*.js"
+    "app/scripts/**/*.js",
+    "test/**/*.js"
   ],
   "dontLoad": [
-    "bower_components/**/*.js",
+    "app/bower_components/**/*.js",
     "node_modules/**/*.js"
   ],
   "plugins": {
