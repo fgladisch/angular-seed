@@ -7,8 +7,8 @@
   "description": "Template for angular projects featuring gulp and karma.",
   "main": "index.html",
   "dependencies": {
-    "angular": "^1.4.4",
-    "angular-mocks": "^1.4.4",
-    "angular-route": "^1.4.4"
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest"
   }
 }

@@ -1,9 +1,10 @@
-/* global module */
-
 // Karma configuration
 // Generated on Fri Aug 21 2015 12:49:04 GMT+0200 (CEST)
 
 module.exports = function(config) {
+
+  'use strict';
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)

@@ -4,23 +4,19 @@
     "type": "git",
     "url": "git://github.com/fgladisch/angular-template.git"
   },
-  "jscsConfig": {
-    "preset": "google",
-    "maximumLineLength": 140
-  },
   "devDependencies": {
-    "del": "*",
-    "gulp": "*",
-    "gulp-concat": "*",
-    "gulp-concat-css": "*",
-    "gulp-cssnano": "*",
-    "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
-    "jasmine-core": "*",
-    "karma": "*",
-    "karma-coverage": "*",
-    "karma-jasmine": "*",
-    "karma-phantomjs-launcher": "*",
-    "phantomjs-prebuilt": "*"
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-concat-css": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "jasmine-core": "latest",
+    "karma": "latest",
+    "karma-coverage": "latest",
+    "karma-jasmine": "latest",
+    "karma-phantomjs-launcher": "latest",
+    "phantomjs-prebuilt": "latest"
   }
 }

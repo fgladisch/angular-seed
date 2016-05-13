@@ -16,7 +16,6 @@ My personal "Angular seed" (a template for angular projects).
 
 * [atom-ternjs](https://atom.io/packages/atom-ternjs)
 * [linter](https://atom.io/packages/linter)
-* [linter-jscs](https://atom.io/packages/linter-jscs)
 * [linter-jshint](https://atom.io/packages/linter-jshint)
 
 ## Project structure

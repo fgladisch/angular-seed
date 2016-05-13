@@ -1,3 +1,7 @@
+/* jshint node: true */
+
+'use strict';
+
 var APP_NAME = 'app';
 
 var del = require('del');
