@@ -1,6 +1,6 @@
 ## What is this?
 
-My personal "Angular seed" (a template for angular projects).
+A very minimalistic "Angular seed" (a template for angular projects).
 
 ## What is included?
 
@@ -27,10 +27,16 @@ My personal "Angular seed" (a template for angular projects).
 │   │   ├── icon.png
 │   │   └── logo.png
 │   ├── scripts
+│   │   ├── constants
+│   │   │   └── example.constant.js
 │   │   ├── controllers
-│   │   │   └── example.js
+│   │   │   └── example.controller.js
+│   │   ├── directives
+│   │   │   └── example.directive.js
+│   │   ├── filters
+│   │   │   └── example.filter.js
 │   │   ├── services
-│   │   │   └── example.js
+│   │   │   └── example.service.js
 │   │   └── app.js
 │   ├── styles
 │   │   ├── font
@@ -38,18 +44,22 @@ My personal "Angular seed" (a template for angular projects).
 │   │   │   ├── Roboto-Light.woff
 │   │   │   ├── Roboto-Regular.woff
 │   │   │   └── Roboto-Thin.woff
-│   │   └── font.css
+│   │   ├── font.css
+│   │   └── layout.css
 │   ├── templates
+│   │   └── example.html
+│   ├── views
 │   │   └── example.html
 │   └── index.html
 ├── test
 │   ├── controllers
-│   │   └── example.js
+│   │   └── example.spec.js
+│   ├── directives
+│   │   └── example.spec.js
+│   ├── filters
+│   │   └── example.spec.js
 │   └── services
-│       └── example.js
-├── .bowerrc
-├── .gitignore
-├── .tern-project
+│       └── example.spec.js
 ├── bower.json
 ├── gulpfile.js
 ├── karma.conf.js

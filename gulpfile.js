@@ -20,7 +20,7 @@ gulp.task('default', [
 
 gulp.task('debug', [
   'copy',
-  'scripts_debug',
+  'scripts.debug',
   'styles'
 ]);
 
@@ -35,7 +35,7 @@ gulp.task('scripts', ['clean'], function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('scripts_debug', ['clean'], function() {
+gulp.task('scripts.debug', ['clean'], function() {
   return gulp.src('app/scripts/**/*.js')
     .pipe(sourcemaps.init())
     .pipe(concat(APP_NAME + '.min.js'))
@@ -54,6 +54,7 @@ gulp.task('copy', ['clean'], function() {
   return gulp.src([
       'app/bower_components/**/*',
       'app/templates/*.html',
+      'app/views/*.html',
       'app/styles/font/*.woff',
       'app/images/*.{png,jpg}',
       'app/index.html'

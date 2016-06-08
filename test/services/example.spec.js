@@ -4,14 +4,14 @@ describe('Unit: Example servive', function() {
 
   beforeEach(module('app'));
 
-  var example;
+  var myService;
 
   beforeEach(inject(function($injector) {
-    example = $injector.get('exampleService');
+    myService = $injector.get('myService');
   }));
 
   it('should succeed', function() {
-    expect(example.test()).toEqual(true);
+    expect(myService.test()).toBe(true);
   });
 
 });

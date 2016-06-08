@@ -1,14 +1,20 @@
-angular.module('app', ['ngRoute'])
+(function() {
 
-.config(['$routeProvider',
+  'use strict';
 
-  function($routeProvider) {
+  angular
+    .module('app', ['ngRoute'])
+    .config(config);
 
-    'use strict';
+  config.$inject = ['$routeProvider'];
+
+  function config($routeProvider) {
 
     $routeProvider
       .when('/example', {
-        templateUrl: 'templates/example.html'
+        templateUrl: 'views/example.html',
+        controller: 'ExampleController',
+        controllerAs: 'vm'
       })
       .otherwise({
         redirectTo: '/example'
@@ -16,4 +22,4 @@ angular.module('app', ['ngRoute'])
 
   }
 
-]);
+})();
