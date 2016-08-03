@@ -4,12 +4,14 @@
     "type": "git",
     "url": "git://github.com/fgladisch/angular-template.git"
   },
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "devDependencies": {
     "del": "latest",
     "gulp": "latest",
     "gulp-concat": "latest",
-    "gulp-concat-css": "latest",
-    "gulp-cssnano": "latest",
+    "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
     "jasmine-core": "latest",

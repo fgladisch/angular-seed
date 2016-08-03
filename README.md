@@ -10,6 +10,7 @@ A very minimalistic "Angular seed" (a template for angular projects).
 * Configuration files for [tern](http://ternjs.net/) und [JSCS](http://jscs.info/)
 * [Gulpfile](http://gulpjs.com/) which runs tests and outputs minified JavaScript and CSS (see below)
 * [Roboto font](https://www.google.com/fonts/specimen/Roboto) and the CSS to use it
+* [SASS](http://sass-lang.com)
 * Example stuff
 
 ## Recommended Atom Plugins
@@ -72,7 +73,6 @@ A very minimalistic "Angular seed" (a template for angular projects).
 ### Install dependencies:
 ```sh
 $ npm install
-$ bower install
 ```
 
 ### Build:
