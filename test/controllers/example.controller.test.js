@@ -14,7 +14,7 @@ describe('Unit: Example controller', function() {
     });
   }));
 
-  it('should …', function() {
+  it('should succeed', function() {
     vm.test();
     expect(myService.test).toHaveBeenCalled();
   });

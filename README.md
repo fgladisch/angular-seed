@@ -4,13 +4,14 @@ A very minimalistic "Angular seed" (a template for angular projects).
 
 ## What is included?
 
-* [Angular](https://angularjs.org/) (with routing)
-* Testing with [Karma](http://karma-runner.github.io/) and [Jasmine](http://jasmine.github.io/) in [PhantomJS](http://phantomjs.org/)
-* Code coverage report with [Istanbul](https://gotwarlost.github.io/istanbul/)
-* Configuration files for [tern](http://ternjs.net/) und [JSCS](http://jscs.info/)
+* [Angular](https://angularjs.org) (with routing)
+* Testing with [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io) in [PhantomJS](http://phantomjs.org)
+* Code coverage report with [Istanbul](https://gotwarlost.github.io/istanbul)
+* Configuration file for [tern](http://ternjs.net/)
 * [Gulpfile](http://gulpjs.com/) which runs tests and outputs minified JavaScript and CSS (see below)
 * [Roboto font](https://www.google.com/fonts/specimen/Roboto) and the CSS to use it
-* [SASS](http://sass-lang.com)
+* [Sass](http://sass-lang.com)
+* [Bower](http://bower.io)
 * Example stuff
 
 ## Recommended Atom Plugins
@@ -40,13 +41,11 @@ A very minimalistic "Angular seed" (a template for angular projects).
 │   │   │   └── example.service.js
 │   │   └── app.js
 │   ├── styles
-│   │   ├── font
-│   │   │   ├── Roboto-Bold.woff
-│   │   │   ├── Roboto-Light.woff
-│   │   │   ├── Roboto-Regular.woff
-│   │   │   └── Roboto-Thin.woff
-│   │   ├── font.css
-│   │   └── layout.css
+│   │   ├── fonts
+│   │   │   └── …
+│   │   ├── common.scss
+│   │   ├── index.scss
+│   │   └── typography.scss
 │   ├── templates
 │   │   └── example.html
 │   ├── views
@@ -85,29 +84,30 @@ $ gulp
 ```sh
 .
 ├── bower_components
+│   └── …
 ├── images
 │   ├── icon.png
 │   └── logo.png
 ├── scripts
 │   └── app.min.js
 ├── styles
-│   ├── font
-│   │   ├── Roboto-Bold.woff
-│   │   ├── Roboto-Light.woff
-│   │   ├── Roboto-Regular.woff
-│   │   └── Roboto-Thin.woff
+│   ├── fonts
+│   │   └── …
 │   └── app.min.css
 ├── templates
 │   └── example.html
+├── views
+│   └── example.html
 └── index.html
+
 ```
 
-### Build, but don't minify JavaScript (for better debugging):
+### Build, but don't minify JavaScript/CSS (for better debugging):
 ```sh
 $ gulp debug
 ```
 
-### Build on changes (... and don't minify JavaScript):
+### Build on changes (... and don't minify JavaScript/CSS):
 ```sh
 $ gulp watch
 ```
