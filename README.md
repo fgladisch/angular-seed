@@ -1,3 +1,5 @@
+# angular-seed
+
 ## What is this?
 
 A very minimalistic "Angular seed" (a template for angular projects).
