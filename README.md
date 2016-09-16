@@ -1,10 +1,6 @@
 # angular-seed
 
-## What is this?
-
-A very minimalistic "Angular seed" (a template for angular projects).
-
-## What is included?
+This is a minimalistic AngularJS seed project, featuring:
 
 * [Angular](https://angularjs.org) (with routing)
 * Testing with [Karma](http://karma-runner.github.io) and [Jasmine](http://jasmine.github.io) in [PhantomJS](http://phantomjs.org)
@@ -14,7 +10,7 @@ A very minimalistic "Angular seed" (a template for angular projects).
 * [Roboto font](https://www.google.com/fonts/specimen/Roboto) and the CSS to use it
 * [Sass](http://sass-lang.com)
 * [Bower](http://bower.io)
-* Example stuff
+* Examples
 
 ## Recommended Atom Plugins
 
